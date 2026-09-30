@@ -70,7 +70,7 @@ export default function WhatMakesDifferent() {
           </div>
         ))}
       </div>
-        {/* Balanced Sleek Modern Divider */}  
+        {/* Balanced Sleek Modern */}  
       <div style={{
         width: '100%',
         height: '2px',
