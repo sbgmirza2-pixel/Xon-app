@@ -1,18 +1,9 @@
 'use client';
-import { useState } from 'react';
 
 export default function ShareModal({ isOpen, onClose }) {
-  const [copied, setCopied] = useState(false);
-
   if (!isOpen) return null;
 
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
-
-  const handleCopyLink = () => {
-    navigator.clipboard.writeText(currentUrl);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
-  };
 
   const socialLinks = [
     {
@@ -141,7 +132,7 @@ export default function ShareModal({ isOpen, onClose }) {
         </div>
 
         {/* Social Icons Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginBottom: '24px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
           {socialLinks.map((item, index) => (
             <a 
               key={index}
@@ -172,47 +163,6 @@ export default function ShareModal({ isOpen, onClose }) {
               </span>
             </a>
           ))}
-        </div>
-
-        {/* Copy Link Field */}
-        <div style={{
-          display: 'flex',
-          alignItem: 'center',
-          background: 'var(--bg)',
-          border: '1px solid var(--line)',
-          borderRadius: '14px',
-          padding: '6px 6px 6px 14px',
-          justifyContent: 'space-between'
-        }}>
-          <span style={{
-            fontSize: '0.85rem',
-            color: 'var(--muted)',
-            whiteSpace: 'nowrap',
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
-            maxWidth: '240px',
-            fontFamily: 'monospace'
-          }}>
-            {currentUrl}
-          </span>
-          <button
-            onClick={handleCopyLink}
-            style={{
-              background: copied ? '#10B981' : 'var(--orange)',
-              color: '#fff',
-              border: 'none',
-              borderRadius: '10px',
-              padding: '10px 16px',
-              fontSize: '0.85rem',
-              fontWeight: '700',
-              fontFamily: 'var(--h)',
-              cursor: 'pointer',
-              transition: 'background 0.2s ease',
-              whiteSpace: 'nowrap'
-            }}
-          >
-            {copied ? 'Copied! ✓' : 'Copy Link'}
-          </button>
         </div>
       </div>
 

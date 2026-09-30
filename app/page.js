@@ -14,6 +14,7 @@ import CommonProblems from './components/CommonProblems';
 import Conclusion from './components/Conclusion';
 import FAQsSection from './components/FAQsSection';
 import Screenshots from './components/Screenshots';
+import AppInfo from './components/AppInfo';
 
 export default function Home() {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -56,6 +57,7 @@ export default function Home() {
 
       <Hero />
       <WhtaIs />
+      <AppInfo />
       <WhatMakesDifferent />
       <PopularTitles />
       <KeyFeatures />

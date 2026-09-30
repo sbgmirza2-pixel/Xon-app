@@ -25,7 +25,7 @@ export default function HowToInstall() {
   ];
 
   return (
-    <section id="install" style={{
+    <section id="installation" style={{
       padding: '60px 20px 40px 20px',
       maxWidth: '900px',
       margin: '0 auto',

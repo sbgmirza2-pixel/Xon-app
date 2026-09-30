@@ -22,7 +22,7 @@ export default function Hero() {
               <a href="#download" className="btn">Download APK</a>
               
               <a 
-                href="#installation" 
+                href="#download" 
                 style={{
                   background: 'var(--surface)',
                   color: 'var(--ink)',
