@@ -11,7 +11,7 @@ export default function Hero() {
       <header className="hero" style={{ paddingTop: '100px' }}>
         <div className="w">
           <div>
-            <h1>Download XON App – Stream Free Anime & Movies on Android</h1>
+            <h1>Xon App</h1>
 
             <p className="lead">
               Xon app is an entertainment app where users can find cartoons, anime, movies, and series, all in one place. This app is best for children, elders, families, anime lovers, and anyone who wants to watch animated shows instead of real-life series. In this article, we will discuss the Xon App, its features, how to download it, its pros and cons, and common problems and their solutions.
