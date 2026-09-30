@@ -2,9 +2,9 @@
 
 export default function Screenshots() {
   const screenshots = [
-    { img: "/Xon_Home_screen.webp", alt: "Home Screen" },
+    { img: "/Xon_Home_Screen.webp", alt: "Home Screen" },
     { img: "/Xon_Watch_Movies.webp", alt: "Watch Movies" },
-    { img: "/Xon_play_Games.webp", alt: "Play Games" },
+    { img: "/Xon_Play_Games.webp", alt: "Play Games" },
     { img: "/Xon_Save_Favorite.webp", alt: "Save Favorite" }
   ];
 
