@@ -1,26 +1,174 @@
-@import "tailwindcss";
+/* ===== Xon App – globals.css (Next.js) =====
+   Fonts: Baloo 2 (headings) + Nunito (body) – load via next/font in layout.js
+   Colors: orange #ff6a00, aqua #0fb8dc, green #12b84a, charcoal #363b42 (from app icon)
+*/
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light theme */
+  --bg: #f6fbfd;
+  --surface: #ffffff;
+  --ink: #22282e;
+  --muted: #5a6672;
+  --line: #d6e4ea;
+  --hero: #e6f7fc;
+
+  /* Brand colors */
+  --orange: #ff6a00;
+  --orange-ink: #b34700;
+  --aqua: #0fb8dc;
+  --green: #12b84a;
+
+  /* Fonts (variables come from next/font in layout.js) */
+  --h: var(--font-baloo), "Baloo 2", "Trebuchet MS", sans-serif;
+  --b: var(--font-nunito), "Nunito", "Segoe UI", Arial, sans-serif;
+
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Dark theme (follows device setting) */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --bg: #2b3036;
+    --surface: #363b42;
+    --ink: #f2f7f9;
+    --muted: #b3c0c8;
+    --line: #4a5159;
+    --orange-ink: #ff9a4d;
+    --hero: #20252a;
   }
 }
+:root[data-theme="dark"] {
+  --bg: #2b3036;
+  --surface: #363b42;
+  --ink: #f2f7f9;
+  --muted: #b3c0c8;
+  --line: #4a5159;
+  --orange-ink: #ff9a4d;
+  --hero: #20252a;
+}
+
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+  scroll-behavior: smooth;
+}
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1.05rem/1.65 var(--b);
+}
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--aqua); outline-offset: 3px; }
+
+/* Layout */
+.w { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+section { padding: 56px 0; }
+.bg-hero { background: var(--hero); }
+
+/* Nav */
+nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; gap: 12px; flex-wrap: wrap; }
+nav b { font: 800 1.5rem var(--h); display: flex; align-items: center; gap: 10px; }
+nav img { width: 36px; height: 36px; border-radius: 10px; }
+nav div a { text-decoration: none; margin-left: 18px; font-weight: 700; color: var(--muted); }
+nav div a:hover { color: var(--orange-ink); }
+
+/* Hero */
+.hero { background: var(--hero); } /* Solid orange border removed completely */
+.hero .w { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; padding-bottom: 56px; padding-top: 24px; }
+h1 { font: 800 clamp(2.4rem, 6vw, 4.2rem)/1.02 var(--h); margin: 0 0 16px; letter-spacing: -0.01em; }
+h1 span { display: block; color: var(--orange-ink); }
+.hero p { max-width: 52ch; color: var(--muted); margin: 0 0 24px; }
+.meta { margin-top: 14px; font-size: 0.92rem; color: var(--muted); }
+
+.btn {
+  display: inline-block; background: var(--orange); color: #1a1a1a;
+  font: 800 1.15rem var(--h); padding: 12px 28px; border-radius: 999px;
+  text-decoration: none; box-shadow: 0 4px 0 #b34700;
+}
+.btn:active { transform: translateY(3px); box-shadow: 0 1px 0 #b34700; }
+
+.icon { justify-self: center; position: relative; }
+.icon img {
+  width: min(300px, 70vw); border-radius: 26%; display: block;
+  box-shadow: 0 18px 0 -6px var(--aqua);
+  animation: bob 4s ease-in-out infinite;
+}
+@keyframes bob { 50% { transform: translateY(-10px) rotate(-2deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .icon img { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* Headings & text */
+h2 { font: 800 clamp(1.7rem, 4vw, 2.4rem)/1.1 var(--h); margin: 0 0 20px; }
+.lead { max-width: 62ch; color: var(--muted); }
+h3.sub { font: 800 1.3rem var(--h); margin: 0 0 10px; }
+
+/* App info strip */
+.info { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); border: 2.5px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--surface); margin-top: 24px; }
+.info div { padding: 14px 18px; border-right: 2px solid var(--line); }
+.info div:last-child { border: 0; }
+.info small { display: block; color: var(--muted); font-size: 0.85rem; }
+.info strong { font-family: var(--h); font-size: 1.15rem; }
+
+/* Features */
+.feat { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px 40px; }
+.feat h3 { font: 800 1.25rem var(--h); margin: 0 0 4px; color: var(--orange-ink); }
+.feat p { margin: 0; color: var(--muted); }
+.feat div { border-left: 5px solid var(--aqua); padding-left: 16px; }
+.feat div:nth-child(3n+2) { border-color: var(--green); }
+.feat div:nth-child(3n) { border-color: var(--orange); }
+
+/* Popular titles */
+.titles { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; margin: 0; }
+.titles li { background: var(--surface); border: 2px solid var(--line); border-radius: 999px; padding: 4px 16px; font-weight: 700; }
+.titles li:nth-child(4n+1) { border-color: var(--orange); }
+.titles li:nth-child(4n+2) { border-color: var(--aqua); }
+.titles li:nth-child(4n+3) { border-color: var(--green); }
+
+/* Install steps */
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: s; }
+ol.steps li { counter-increment: s; position: relative; padding: 0 0 14px 52px; }
+ol.steps li::before {
+  content: counter(s); position: absolute; left: 0; top: 0; width: 36px; height: 36px;
+  border-radius: 50%; background: var(--orange); color: #1a1a1a;
+  font: 800 1.1rem/36px var(--h); text-align: center;
+}
+.note { background: var(--surface); border: 2.5px dashed var(--orange); border-radius: 16px; padding: 14px 18px; margin-top: 22px; font-size: 0.95rem; }
+
+/* Pros & cons */
+ul.pc { padding-left: 1.2em; margin: 0; }
+ul.pc li { margin-bottom: 6px; }
+.pros h3 { color: var(--green); }
+.cons h3 { code { color: var(--orange-ink); } }
+
+/* Alternatives */
+.alt { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.alt div { border-top: 5px solid var(--aqua); padding-top: 10px; }
+.alt div:nth-child(even) { border-color: var(--orange); }
+.alt h3 { font: 800 1.2rem var(--h); margin: 0 0 4px; }
+.alt p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+
+/* Accordions (help + FAQ) */
+details { border-bottom: 2px solid var(--line); }
+summary { cursor: pointer; font: 700 1.08rem var(--b); padding: 14px 0; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; font: 800 1.5rem/1 var(--h); color: var(--orange-ink); }
+details[open] summary::after { content: "–"; }
+details p { margin: 0 0 16px; color: var(--muted); max-width: 66ch; }
+
+/* Footer */
+footer { background: var(--hero); border-top: 6px solid var(--aqua); padding: 32px 0; color: var(--muted); font-size: 0.92rem; }
+
+/* Mobile */
+@media (max-width: 760px) {
+  .hero .w, .two { grid-template-columns: 1fr; }
+  .icon { order: -1; }
+  nav div { display: none; }
+  .info div { border-right: 0; border-bottom: 2px solid var(--line); }
 }
