@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -7,20 +8,16 @@ export default function Footer() {
         {/* Left Side: Brand & Description */}
         <div style={{ maxWidth: '380px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <div style={{
-              width: '36px',
-              height: '36px',
-              borderRadius: '10px',
-              background: 'var(--orange)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#1a1a1a',
-              font: '800 1.2rem var(--h)'
-            }}>
-              X
+            {/* Logo from public folder */}
+            <div style={{ position: 'relative', width: '36px', height: '36px' }}>
+              <Image 
+                src="/xon-app.jpg" // Agar SVG hai toh "/logo.svg" karein
+                alt="Xon App Logo" 
+                fill 
+                style={{ objectFit: 'contain', borderRadius: '10px' }} 
+              />
             </div>
-            <b style={{ font: '800 1.3rem var(--h)' }}>Xon App</b>
+            <b style={{ font: '800 1rem var(--h)', color: 'var(--ink)', marginBottom: '4px' }}>Xon App</b>
           </div>
           <p style={{ margin: 0, color: 'var(--muted)', fontSize: '0.95rem' }}>
             Your ultimate entertainment destination for cartoons and anime.

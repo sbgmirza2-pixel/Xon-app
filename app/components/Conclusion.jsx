@@ -8,46 +8,7 @@ export default function Conclusion() {
       margin: '0 auto',
       position: 'relative'
     }}>
-      {/* Inline Styles for Border Drawing on Hover */}
-      <style>{`
-        .conclusion-card {
-          position: relative;
-          background: transparent;
-          border: 1px solid transparent;
-          border-radius: 20px;
-          padding: 40px;
-          overflow: hidden;
-          transition: background 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
-          cursor: default;
-        }
-        
-        .conclusion-card::before, .conclusion-card::after {
-          content: '';
-          position: absolute;
-          background: var(--orange);
-          transition: width 0.4s ease;
-          width: 0;
-          height: 2px;
-        }
-
-        .conclusion-card::before {
-          top: 0; left: 0;
-        }
-        .conclusion-card::after {
-          bottom: 0; right: 0;
-        }
-
-        .conclusion-card:hover {
-          background: var(--surface);
-          transform: translateY(-2px);
-          box-shadow: 0 15px 35px rgba(255,106,0,0.08);
-          border-color: var(--line);
-        }
-
-        .conclusion-card:hover::before, .conclusion-card:hover::after {
-          width: 100%;
-        }
-      `}</style>
+     
 
       <div style={{
         borderLeft: '4px solid var(--orange)',
