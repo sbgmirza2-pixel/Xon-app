@@ -115,49 +115,7 @@ export default function HomePage() {
       <Conclusion />
       <FAQsSection />
 
-      {/* Structured Data Specification Table */}
-      <section className="w" style={{ padding: '40px 20px' }}>
-        <div style={{ background: 'var(--surface)', border: '2px solid var(--line)', borderRadius: '18px', padding: '24px' }}>
-          <h2 style={{ fontSize: '1.4rem', marginBottom: '12px', color: 'var(--ink)' }}>
-            Xon App Specifications & Overview Table
-          </h2>
-          <p style={{ color: 'var(--muted)', marginBottom: '16px', fontSize: '0.95rem' }}>
-            Quick summary of technical specifications and core features for Xon App:
-          </p>
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
-              <thead>
-                <tr style={{ background: 'var(--hero)', color: 'var(--orange-ink)' }}>
-                  <th style={{ padding: '12px', borderBottom: '2px solid var(--line)' }}>Parameter</th>
-                  <th style={{ padding: '12px', borderBottom: '2px solid var(--line)' }}>Details & Specifications</th>
-                </tr>
-              </thead>
-              <tbody style={{ color: 'var(--ink)', fontSize: '0.95rem' }}>
-                <tr>
-                  <td style={{ padding: '12px', borderBottom: '1px solid var(--line)', fontWeight: 'bold' }}>Application Name</td>
-                  <td style={{ padding: '12px', borderBottom: '1px solid var(--line)' }}>Xon App</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '12px', borderBottom: '1px solid var(--line)', fontWeight: 'bold' }}>Latest Version</td>
-                  <td style={{ padding: '12px', borderBottom: '1px solid var(--line)' }}>v1.0</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '12px', borderBottom: '1px solid var(--line)', fontWeight: 'bold' }}>Supported OS</td>
-                  <td style={{ padding: '12px', borderBottom: '1px solid var(--line)' }}>Android 5.0 and above</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '12px', borderBottom: '1px solid var(--line)', fontWeight: 'bold' }}>Category</td>
-                  <td style={{ padding: '12px', borderBottom: '1px solid var(--line)' }}>Cartoons & Anime Streaming</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '12px', fontWeight: 'bold' }}>Official Platform</td>
-                  <td style={{ padding: '12px' }}>Android APK Distribution</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+    
 
       {/* Editorial Citation & Reference Box */}
       <section className="w" style={{ padding: '20px 20px 40px 20px' }}>

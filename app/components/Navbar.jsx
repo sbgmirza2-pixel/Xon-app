@@ -37,7 +37,7 @@ export default function Navbar() {
             Home
           </Link>
           <Link href="#blog" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '0.95rem' }}>
-            Blog
+            Blogs
           </Link>
           <Link href="/faqs" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '0.95rem' }}>
             FAQs
@@ -103,7 +103,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
             style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '1rem', padding: '8px 12px', borderRadius: '10px', background: 'var(--bg)' }}
           >
-            Blog
+            Blogs
           </Link>
           <Link 
             href="/faqs" 
