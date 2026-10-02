@@ -1,7 +1,7 @@
 'use client';
 
 import Navbar from '../components/Navbar';
-import Conclusion from '../components/Conclusion';
+
 
 export default function Disclaimer() {
   return (
@@ -99,8 +99,7 @@ export default function Disclaimer() {
         </div>
       </section>
 
-      {/* Footer / Conclusion */}
-      <Conclusion />
+    
     </main>
   );
 }

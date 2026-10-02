@@ -1,7 +1,7 @@
 'use client';
 
 import Navbar from '../components/Navbar';
-import Conclusion from '../components/Conclusion';
+
 
 export default function TermsAndConditions() {
   return (
@@ -99,8 +99,7 @@ export default function TermsAndConditions() {
         </div>
       </section>
 
-      {/* Footer / Conclusion */}
-      <Conclusion />
+      
     </main>
   );
 }

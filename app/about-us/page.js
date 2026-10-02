@@ -86,8 +86,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Footer / Conclusion */}
-      <Conclusion />
+     
     </main>
   );
 }

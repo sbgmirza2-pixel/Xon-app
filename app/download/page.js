@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
-import Conclusion from '../components/Conclusion';
 import Link from 'next/link';
 
 export default function DownloadPage() {
@@ -105,56 +104,54 @@ export default function DownloadPage() {
             background: 'var(--bg)',
             border: '1px solid var(--line)',
             borderRadius: '20px',
-            padding: '24px',
+            padding: '32px',
             width: '100%',
             maxWidth: '420px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: '18px',
+            justifyContent: 'center',
             boxShadow: 'inset 0 2px 6px rgba(0,0,0,0.01)'
           }}>
             {!mounted ? (
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', minHeight: '120px', justifyContent: 'center', width: '100%' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', minHeight: '100px', justifyContent: 'center', width: '100%' }}>
                 <span style={{ font: '700 0.95rem var(--h)', color: 'var(--muted)' }}>Preparing secure connection...</span>
               </div>
             ) : !canDownload ? (
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', width: '100%' }}>
-                {/* Timer Ring */}
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%' }}>
+                {/* Ultra-Modern Glowing Conic Gradient Timer */}
                 <div style={{
                   position: 'relative',
-                  width: '90px',
-                  height: '90px',
+                  width: '100px',
+                  height: '100px',
                   borderRadius: '50%',
                   background: `conic-gradient(var(--orange) ${progressPercent}%, var(--line) ${progressPercent}%)`,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: '0 0 25px rgba(255, 106, 0, 0.2)',
+                  boxShadow: '0 0 30px rgba(255, 106, 0, 0.25)',
+                  animation: 'pulse 2s infinite ease-in-out',
                   transition: 'background 1s linear'
                 }}>
+                  {/* Inner Dark/Surface Circle */}
                   <div style={{
-                    width: '76px',
-                    height: '76px',
+                    width: '82px',
+                    height: '82px',
                     borderRadius: '50%',
                     background: 'var(--surface)',
                     display: 'flex',
+                    flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    font: '800 1.5rem var(--h)',
-                    color: 'var(--orange)',
-                    boxShadow: '0 4px 12px rgba(0,0,0,0.04)'
+                    boxShadow: 'inset 0 2px 5px rgba(0,0,0,0.05)'
                   }}>
-                    {timeLeft}
+                    <span style={{ font: '800 1.8rem var(--h)', color: 'var(--orange)', lineHeight: '1' }}>
+                      {timeLeft}
+                    </span>
+                    <span style={{ font: '700 0.65rem var(--h)', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1px', marginTop: '2px' }}>
+                      Sec
+                    </span>
                   </div>
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                  <span style={{ font: '800 1.05rem var(--h)', color: 'var(--ink)' }}>
-                    Generating Download Link
-                  </span>
-                  <span style={{ font: '600 0.9rem var(--b)', color: 'var(--muted)' }}>
-                    Please wait <span style={{ color: 'var(--orange)', fontWeight: '800' }}>{timeLeft} seconds</span>...
-                  </span>
                 </div>
               </div>
             ) : (
@@ -258,9 +255,6 @@ export default function DownloadPage() {
           </div>
         </div>
       </section>
-
-      {/* Footer / Conclusion */}
-      <Conclusion />
     </main>
   );
 }
