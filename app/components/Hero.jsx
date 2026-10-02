@@ -19,7 +19,7 @@ export default function Hero() {
 
             {/* Action Buttons */}
             <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center', marginTop: '24px' }}>
-              <a href="#download" className="btn">Download APK</a>
+              <a href="/download" className="btn">Download APK</a>
               
               <a 
                 href="#download" 

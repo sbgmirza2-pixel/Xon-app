@@ -39,7 +39,7 @@ export default function Navbar() {
           <Link href="#blog" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '0.95rem' }}>
             Blog
           </Link>
-          <Link href="#faq" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '0.95rem' }}>
+          <Link href="/faqs" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '0.95rem' }}>
             FAQs
           </Link>
         </div>
@@ -47,9 +47,9 @@ export default function Navbar() {
         {/* Desktop Download Button & Mobile Hamburger */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', position: 'relative', zIndex: 2 }}>
           <div className="desktop-btn">
-            <a href="#download" className="btn" style={{ padding: '8px 18px', fontSize: '0.9rem' }}>
+            <Link href="/download" className="btn" style={{ padding: '8px 18px', fontSize: '0.9rem', textDecoration: 'none', display: 'inline-block' }}>
               Download
-            </a>
+            </Link>
           </div>
 
           {/* Hamburger Menu Toggle Button */}
@@ -106,20 +106,20 @@ export default function Navbar() {
             Blog
           </Link>
           <Link 
-            href="#faq" 
+            href="/faqs" 
             onClick={() => setIsOpen(false)}
             style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '1rem', padding: '8px 12px', borderRadius: '10px', background: 'var(--bg)' }}
           >
             FAQs
           </Link>
-          <a 
-            href="#download" 
+          <Link 
+            href="/download" 
             onClick={() => setIsOpen(false)} 
             className="btn" 
-            style={{ textAlign: 'center', padding: '10px', fontSize: '0.95rem', width: '100%' }}
+            style={{ textAlign: 'center', padding: '10px', fontSize: '0.95rem', width: '100%', textDecoration: 'none', boxSizing: 'border-box' }}
           >
             Download
-          </a>
+          </Link>
         </div>
       )}
 
