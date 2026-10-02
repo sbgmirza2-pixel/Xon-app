@@ -9,12 +9,11 @@ export default function Screenshots() {
   ];
 
   return (
-    <section id="screenshots" style={{
-      padding: '60px 0 40px 0',
-      maxWidth: '1000px',
+     <section id="about" style={{
+      padding: '60px 20px 40px 20px',
+      maxWidth: '900px',
       margin: '0 auto',
-      position: 'relative',
-      overflow: 'hidden'
+      position: 'relative'
     }}>
       {/* Inline Styles for Horizontal Scroll & Hover Effects */}
       <style>{`

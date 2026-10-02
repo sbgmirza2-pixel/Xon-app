@@ -11,9 +11,9 @@ export default function AppInfo() {
   ];
 
   return (
-    <section style={{
-      padding: '40px 0',
-      maxWidth: '1000px',
+     <section id="about" style={{
+      padding: '60px 20px 40px 20px',
+      maxWidth: '900px',
       margin: '0 auto',
       position: 'relative'
     }}>
