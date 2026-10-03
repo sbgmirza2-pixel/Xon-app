@@ -11,12 +11,13 @@ export default function AppInfo() {
   ];
 
   return (
-     <section id="about" style={{
+      <section id="about" style={{
       padding: '60px 20px 40px 20px',
       maxWidth: '900px',
       margin: '0 auto',
       position: 'relative'
     }}>
+     
       <style>{`
         .app-info-card {
           background: var(--bg);
@@ -40,7 +41,7 @@ export default function AppInfo() {
       {/* Section Heading */}
       <div style={{
         paddingLeft: '20px',
-        paddingRight: '20px',
+        paddingRight: '24px',
         borderLeft: '4px solid var(--orange)',
         marginLeft: '20px',
         marginBottom: '25px'
@@ -56,7 +57,7 @@ export default function AppInfo() {
       </div>
 
       {/* Info Grid Container */}
-      <div style={{ padding: '0 20px' }}>
+      <div style={{ padding: '0 24px' }}>
         <div style={{
           background: 'var(--surface)',
           border: '1px solid var(--line)',
