@@ -19,7 +19,7 @@ export default function Navbar() {
       {/* Navbar Containerwith Border Drawing Hover Effect */}
       <div className="navbar-pill">
         
-        {/* Logo with xon-app.jpg */}
+        {/* Logowith xon-app.jpg */}
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', position: 'relative', zIndex: 2 }}>
           <Image 
             src="/xon-app.jpg" 
