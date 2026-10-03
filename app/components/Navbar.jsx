@@ -16,10 +16,10 @@ export default function Navbar() {
       maxWidth: '900px',
       zIndex: 1000,
     }}>
-      {/* Navbar Containerwith Border Drawing Hover Effect */}
+      {/* Navbar Container without Hover Effect */}
       <div className="navbar-pill">
         
-        {/* Logowith xon-app.jpg */}
+        {/* Logo with xon-app.jpg */}
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', position: 'relative', zIndex: 2 }}>
           <Image 
             src="/xon-app.jpg" 
@@ -123,7 +123,7 @@ export default function Navbar() {
         </div>
       )}
 
-      {/* Navbar Hover Animation & Responsive Styles */}
+      {/* Responsive Styles without Hover Animation */}
       <style>{`
         .navbar-pill {
           position: relative;
@@ -136,36 +136,6 @@ export default function Navbar() {
           align-items: center;
           justify-content: space-between;
           box-shadow: 0 10px 25px rgba(0,0,0,0.04);
-          overflow: hidden;
-          transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
-
-        /* Animated border lines on hover */
-        .navbar-pill::before, .navbar-pill::after {
-          content: '';
-          position: absolute;
-          background: var(--orange);
-          transition: width 0.4s ease;
-          width: 0;
-          height: 2px;
-          z-index: 1;
-        }
-
-        .navbar-pill::before {
-          top: 0; left: 0;
-        }
-        .navbar-pill::after {
-          bottom: 0; right: 0;
-        }
-
-        .navbar-pill:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 15px 30px rgba(255,106,0,0.08);
-          border-color: var(--line);
-        }
-
-        .navbar-pill:hover::before, .navbar-pill:hover::after {
-          width: 100%;
         }
 
         .desktop-nav {
