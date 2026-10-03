@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = 'https://train45apk.com';
+  const baseUrl = 'https://xonapp.net/';
 
   return {
     rules: [

@@ -157,8 +157,9 @@ export default function DownloadPage() {
             ) : (
               <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 <a
-                  href="/apk/xon-app-v12.5.1.apk"
-                  download
+                  href="https://app.xonapp.store/Xon.app.Latest.v26.apk"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                   style={{
@@ -183,7 +184,7 @@ export default function DownloadPage() {
                     <polyline points="7 10 12 15 17 10"></polyline>
                     <line x1="12" y1="15" x2="12" y2="3"></line>
                   </svg>
-                  Download Xon App APK (v12.5.1)
+                  Download Xon App APK (v26)
                 </a>
                 <span style={{ fontSize: '0.82rem', color: 'var(--muted)', fontFamily: 'var(--b)' }}>
                   File size: ~15 MB &bull; Android 5.0+ &bull; Verified Safe

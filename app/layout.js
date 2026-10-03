@@ -16,25 +16,25 @@ const nunito = Nunito({
 });
 
 // ⚠️ DEMO CHECK: Apni original domain yahan update kar lein
-const SITE_URL = 'https://xonapp.com';
+const SITE_URL = 'https://xonapp.net/';
 
 export const metadata = {
-  title: 'Xon App - Download Xon App 12.5.1 for Android',
-  description: 'Download Xon App 12.5.1 for Android to watch cartoons, anime, movies, and series.',
-  authors: [{ name: 'Xon App Team', url: `${SITE_URL}/about` }],
-  creator: 'Xon App',
-  publisher: 'Xon App',
+  title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
+  description: 'Download XON App 12.5.1 for Android to watch cartoons, anime, movies, and series.',
+  authors: [{ name: 'XON App Team', url: `${SITE_URL}/about-us` }],
+  creator: 'XON App',
+  publisher: 'XON App',
   alternates: {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: 'Xon App - Download Xon App 12.5.1 for Android',
-    description: 'Download Xon App 12.5.1 for Android to watch cartoons, anime, movies, and series.',
+    title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
+    description: 'Watch 10,000+ cartoons and anime with XON App, available in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto, Chhota Bheem, and more for free on Android & iOS.',
     url: SITE_URL,
-    siteName: 'Xon App',
+    siteName: 'XON App',
     images: [
       {
-        url: `${SITE_URL}/logo.webp`, // ⚠️ DEMO CHECK: Make sure logo.webp exists in public folder
+        url: `${SITE_URL}/xon-app.jpg`, 
         width: 1200,
         height: 630,
         alt: 'Xon App Download',
@@ -45,9 +45,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Xon App Download - Official Latest Version',
-    description: 'Download Xon App 12.5.1 for Android to watch cartoons, anime, movies, and series.',
-    images: [`${SITE_URL}/logo.webp`],
+    title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
+    description: 'Watch 10,000+ cartoons and anime with XON App, available in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto, Chhota Bheem, and more for free on Android & iOS.',
+    images: [`${SITE_URL}/xon-app.jpg`],
   },
 };
 

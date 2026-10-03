@@ -1,15 +1,15 @@
 export default async function sitemap() {
-  const baseUrl = 'https://xonapp.com';
+  const baseUrl = 'https://xonapp.net/';
 
   // Static & Footer Pages
   const staticRoutes = [
     '',
     '/download',
-    '/about',
-    '/contact',
+    '/about-us',
+    '/contact-us',
     '/disclaimer',
-    '/privacy',
-    '/terms',
+    '/privacy-policy',
+    '/terms-and-conditions',
     '/dmca',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
@@ -18,10 +18,11 @@ export default async function sitemap() {
     priority: route === '' ? 1.0 : route === '/download' ? 0.9 : 0.8,
   }));
 
-  // Agar Xon App ke koi specific blogs ya categories hon toh unhein yahan add kar sakti hain
+  // Active Blog Slugs
   const blogSlugs = [
-    // 'xon-app-features',
-    // 'how-to-download-anime-cartoons',
+    'xon-apk-videos-not-playing',
+    'xon-app-not-installing',
+    'xon-app-not-working'
   ];
 
   const blogRoutes = blogSlugs.map((slug) => ({
