@@ -16,7 +16,7 @@ export default function Navbar() {
       maxWidth: '900px',
       zIndex: 1000,
     }}>
-      {/* Navbar Pill Container with Border Drawing Hover Effect */}
+      {/* Navbar Container with Border Drawing Hover Effect */}
       <div className="navbar-pill">
         
         {/* Logo with xon-app.jpg */}
