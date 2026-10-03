@@ -79,7 +79,7 @@ export default function PopularTitles() {
         ))}
       </ul>
 
-      {/* Balanced Sleek Modern Divider */}
+      {/* Balanced Divider */}
       <div style={{
         width: '100%',
         height: '2px',
