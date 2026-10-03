@@ -181,7 +181,7 @@ export default function ProsAndCons() {
         </div>
       </div>
 
-      {/* Balanced Sleek Modern Divider */}
+      {/*  Modern Divider */}
       <div style={{
         width: '100%',
         height: '2px',
