@@ -16,10 +16,10 @@ export default function Navbar() {
       maxWidth: '900px',
       zIndex: 1000,
     }}>
-      {/* Navbar Container without Hover Effect */}
+      {/* Navbar Container */}
       <div className="navbar-pill">
         
-        {/* Logo with xon-app.jpg */}
+        {/* Logo */}
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', position: 'relative', zIndex: 2 }}>
           <Image 
             src="/xon-app.jpg" 
@@ -33,13 +33,13 @@ export default function Navbar() {
 
         {/* Desktop Navigation Links */}
         <div className="desktop-nav" style={{ alignItems: 'center', gap: '24px', position: 'relative', zIndex: 2 }}>
-          <Link href="/" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--ink)', fontSize: '0.95rem' }}>
+          <Link href="/" className="nav-link" style={{ textDecoration: 'none', fontWeight: '700', fontSize: '0.95rem' }}>
             Home
           </Link>
-          <Link href="/blogs" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '0.95rem' }}>
+          <Link href="/blogs" className="nav-link" style={{ textDecoration: 'none', fontWeight: '700', fontSize: '0.95rem' }}>
             Blogs
           </Link>
-          <Link href="/faqs" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '0.95rem' }}>
+          <Link href="/faqs" className="nav-link" style={{ textDecoration: 'none', fontWeight: '700', fontSize: '0.95rem' }}>
             FAQs
           </Link>
         </div>
@@ -94,21 +94,24 @@ export default function Navbar() {
           <Link 
             href="/" 
             onClick={() => setIsOpen(false)}
-            style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--ink)', fontSize: '1rem', padding: '8px 12px', borderRadius: '10px', background: 'var(--bg)' }}
+            className="mobile-link"
+            style={{ textDecoration: 'none', fontWeight: '700', fontSize: '1rem', padding: '8px 12px', borderRadius: '10px', background: 'var(--bg)' }}
           >
             Home
           </Link>
           <Link 
             href="/blogs" 
             onClick={() => setIsOpen(false)}
-            style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '1rem', padding: '8px 12px', borderRadius: '10px', background: 'var(--bg)' }}
+            className="mobile-link"
+            style={{ textDecoration: 'none', fontWeight: '700', fontSize: '1rem', padding: '8px 12px', borderRadius: '10px', background: 'var(--bg)' }}
           >
             Blogs
           </Link>
           <Link 
             href="/faqs" 
             onClick={() => setIsOpen(false)}
-            style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '1rem', padding: '8px 12px', borderRadius: '10px', background: 'var(--bg)' }}
+            className="mobile-link"
+            style={{ textDecoration: 'none', fontWeight: '700', fontSize: '1rem', padding: '8px 12px', borderRadius: '10px', background: 'var(--bg)' }}
           >
             FAQs
           </Link>
@@ -123,7 +126,7 @@ export default function Navbar() {
         </div>
       )}
 
-      {/* Responsive Styles without Hover Animation */}
+      {/* Styles with Orange Hover Effect for Links */}
       <style>{`
         .navbar-pill {
           position: relative;
@@ -136,6 +139,24 @@ export default function Navbar() {
           align-items: center;
           justify-content: space-between;
           box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+        }
+
+        /* Nav Links Color & Hover Effect */
+        .nav-link {
+          color: var(--muted);
+          transition: color 0.2s ease;
+        }
+        .nav-link:hover {
+          color: var(--orange);
+        }
+
+        /* Mobile Links Hover Effect */
+        .mobile-link {
+          color: var(--muted);
+          transition: color 0.2s ease, background 0.2s ease;
+        }
+        .mobile-link:hover {
+          color: var(--orange);
         }
 
         .desktop-nav {
