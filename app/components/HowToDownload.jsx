@@ -27,7 +27,7 @@ export default function HowToDownload() {
       margin: '0 auto',
       position: 'relative'
     }}>
-      {/* Inline Styles for Border Drawing on Hover */}
+      {/*  Styles for Border Drawing on Hover */}
       <style>{`
         .download-item {
           position: relative;
