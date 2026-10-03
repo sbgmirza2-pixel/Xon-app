@@ -116,18 +116,14 @@ export default function HomePage() {
       <FAQsSection />
 
     
-
-      {/* Editorial Citation & Reference Box */}
+{/* Simple Community Notice Text */}
       <section className="w" style={{ padding: '20px 20px 40px 20px' }}>
-        <div style={{ background: 'var(--surface)', borderLeft: '5px solid var(--orange)', border: '2px solid var(--line)', padding: '20px', borderRadius: '16px' }}>
-          <p style={{ fontWeight: 'bold', color: 'var(--ink)', marginBottom: '6px' }}>Editorial Citation & Source Reference:</p>
-          <p style={{ fontStyle: 'italic', color: 'var(--muted)', fontSize: '0.95rem', margin: 0 }}>
-            "According to official developer documentation and entertainment guidelines, Xon App delivers a seamless streaming experience dedicated to animated series, cartoons, and anime lovers."
-          </p>
-          <p style={{ fontSize: '0.85rem', color: 'var(--muted)', marginTop: '10px', marginBottom: 0 }}>
-            Published by Xon App Editorial Team • Last Verified: October 2026
-          </p>
-        </div>
+        <p style={{ fontStyle: 'italic', color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 8px 0', lineHeight: '1.6' }}>
+          This website is independently created and maintained by a passionate fan community dedicated to Xon App lovers. It is not officially affiliated with or endorsed by the original app developers.
+        </p>
+        <p style={{ fontSize: '0.85rem', color: 'var(--muted)', margin: 0 }}>
+          Published by Xon App Fan Community • Last Verified: October 2026
+        </p>
       </section>
     </main>
   );

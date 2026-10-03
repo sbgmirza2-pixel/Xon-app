@@ -36,7 +36,7 @@ export default function Navbar() {
           <Link href="/" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--ink)', fontSize: '0.95rem' }}>
             Home
           </Link>
-          <Link href="#blog" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '0.95rem' }}>
+          <Link href="/blogs" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '0.95rem' }}>
             Blogs
           </Link>
           <Link href="/faqs" style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '0.95rem' }}>
@@ -99,7 +99,7 @@ export default function Navbar() {
             Home
           </Link>
           <Link 
-            href="#blog" 
+            href="/blogs" 
             onClick={() => setIsOpen(false)}
             style={{ textDecoration: 'none', fontWeight: '700', color: 'var(--muted)', fontSize: '1rem', padding: '8px 12px', borderRadius: '10px', background: 'var(--bg)' }}
           >
