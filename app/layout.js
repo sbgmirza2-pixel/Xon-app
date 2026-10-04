@@ -20,7 +20,7 @@ const SITE_URL = 'https://xonapp.net/';
 
 export const metadata = {
   title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
-  description: 'Download XON App 12.5.1 for Android to watch cartoons, anime, movies, and series.',
+  description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
   authors: [{ name: 'XON App Team', url: `${SITE_URL}/about-us` }],
   creator: 'XON App',
   publisher: 'XON App',
@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
         '@id': `${SITE_URL}/#website`,
         url: SITE_URL,
         name: 'Xon App',
-        description: 'Download Xon App 12.5.1 for Android to watch cartoons, anime, movies, and series.',
+        description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
         publisher: {
           '@id': `${SITE_URL}/#organization`
         }

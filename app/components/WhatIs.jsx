@@ -6,13 +6,11 @@ export default function WhatIs() {
       margin: '0 auto',
       position: 'relative'
     }}>
-      {/* Section Heading aligned with App Information */}
+      {/* Section Heading aligned like WhatMakesDifferent */}
       <div style={{
-        paddingLeft: '20px',
-        paddingRight: '24px',
         borderLeft: '4px solid var(--orange)',
-        marginLeft: '20px',
-        marginBottom: '25px'
+        paddingLeft: '24px',
+        marginBottom: '25px',
       }}>
         <h2 style={{ 
           font: '800 2rem var(--h)', 
@@ -24,8 +22,8 @@ export default function WhatIs() {
         </h2>
       </div>
 
-      {/* Content Container aligned with App Information grid container */}
-      <div style={{ padding: '0 24px' }}>
+      {/* Content Container */}
+      <div>
         <p style={{ 
           fontSize: '1.1rem', 
           lineHeight: '1.8', 
@@ -40,7 +38,8 @@ export default function WhatIs() {
           fontSize: '1.1rem', 
           lineHeight: '1.8', 
           color: 'var(--muted)', 
-          fontFamily: 'var(--b)'
+          fontFamily: 'var(--b)',
+          margin: 0
         }}>
           For bigger screens, the Xon App is a good option. The home screen uses colourful posters and large thumbnails that make it easy to recognize different shows. Episodes open smoothly, and the controls are easy to understand for new users. You can switch between episodes quickly.
         </p>

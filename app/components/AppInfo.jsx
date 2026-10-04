@@ -11,13 +11,12 @@ export default function AppInfo() {
   ];
 
   return (
-      <section id="about" style={{
+    <section id="about" style={{
       padding: '60px 20px 40px 20px',
       maxWidth: '900px',
       margin: '0 auto',
       position: 'relative'
     }}>
-     
       <style>{`
         .app-info-card {
           background: var(--bg);
@@ -38,13 +37,11 @@ export default function AppInfo() {
         }
       `}</style>
 
-      {/* Section Heading */}
+      {/* Section Heading aligned like WhatMakesDifferent */}
       <div style={{
-        paddingLeft: '20px',
-        paddingRight: '24px',
         borderLeft: '4px solid var(--orange)',
-        marginLeft: '20px',
-        marginBottom: '25px'
+        paddingLeft: '24px',
+        marginBottom: '25px',
       }}>
         <h2 style={{ 
           font: '800 2rem var(--h)', 
@@ -57,28 +54,26 @@ export default function AppInfo() {
       </div>
 
       {/* Info Grid Container */}
-      <div style={{ padding: '0 24px' }}>
-        <div style={{
-          background: 'var(--surface)',
-          border: '1px solid var(--line)',
-          borderRadius: '20px',
-          padding: '24px',
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-          gap: '20px',
-          boxShadow: '0 10px 30px rgba(0,0,0,0.02)'
-        }}>
-          {appDetails.map((item, index) => (
-            <div key={index} className="app-info-card">
-              <span style={{ fontSize: '0.8rem', color: 'var(--muted)', fontWeight: '700', fontFamily: 'var(--h)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                {item.label}
-              </span>
-              <span style={{ fontSize: '1.05rem', color: 'var(--ink)', fontWeight: '800', fontFamily: 'var(--h)' }}>
-                {item.value}
-              </span>
-            </div>
-          ))}
-        </div>
+      <div style={{
+        background: 'var(--surface)',
+        border: '1px solid var(--line)',
+        borderRadius: '20px',
+        padding: '24px',
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+        gap: '20px',
+        boxShadow: '0 10px 30px rgba(0,0,0,0.02)'
+      }}>
+        {appDetails.map((item, index) => (
+          <div key={index} className="app-info-card">
+            <span style={{ fontSize: '0.8rem', color: 'var(--muted)', fontWeight: '700', fontFamily: 'var(--h)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+              {item.label}
+            </span>
+            <span style={{ fontSize: '1.05rem', color: 'var(--ink)', fontWeight: '800', fontFamily: 'var(--h)' }}>
+              {item.value}
+            </span>
+          </div>
+        ))}
       </div>
     </section>
   );
