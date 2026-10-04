@@ -15,7 +15,6 @@ const nunito = Nunito({
   weight: ['400', '600', '700'],
 });
 
-// ⚠️ DEMO CHECK: Apni original domain yahan update kar lein
 const SITE_URL = 'https://xonapp.net/';
 
 export const metadata = {
@@ -52,10 +51,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Current date for machine-readable freshness signals
   const currentDate = new Date().toISOString();
 
-  // Global SEO Schema Markup with Person Author, Dates, and Entity Links
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -79,7 +76,7 @@ export default function RootLayout({ children }) {
           url: `${SITE_URL}/logo.webp`
         },
         sameAs: [
-          'https://en.wikipedia.org/wiki/Streaming_media', // ⚠️ DEMO CHECK: Change or remove if needed
+          'https://en.wikipedia.org/wiki/Streaming_media',
           'https://en.wikipedia.org/wiki/Mobile_app'
         ]
       },
@@ -113,9 +110,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${baloo2.variable} ${nunito.variable}`}>
       <head>
-        {/* Google Analytics Tag - ⚠️ DEMO CHECK: Replace ID if needed */}
+        {/* Google Analytics Tag - Original ID: G-DEZDNL1KK3 */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XN8J8Q9TLP"
+          src="https://www.googletagmanager.com/gtag/js?id=G-DEZDNL1KK3"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -123,7 +120,7 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XN8J8Q9TLP');
+            gtag('config', 'G-DEZDNL1KK3');
           `}
         </Script>
 
