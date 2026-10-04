@@ -9,7 +9,7 @@ export default function Screenshots() {
   ];
 
   return (
-     <section id="about" style={{
+    <section id="about" style={{
       padding: '60px 20px 40px 20px',
       maxWidth: '900px',
       margin: '0 auto',
@@ -22,7 +22,7 @@ export default function Screenshots() {
           gap: 24px;
           overflow-x: auto;
           scroll-snap-type: x mandatory;
-          padding: 10px 20px 30px 20px;
+          padding: 10px 0 30px 0;
           scrollbar-width: thin;
           scrollbar-color: var(--orange) var(--line);
         }
@@ -105,12 +105,10 @@ export default function Screenshots() {
         }
       `}</style>
 
-      {/* Section Heading */}
+      {/* Section Heading aligned like WhatMakesDifferent */}
       <div style={{
-        paddingLeft: '20px',
-        paddingRight: '20px',
         borderLeft: '4px solid var(--orange)',
-        marginLeft: '20px',
+        paddingLeft: '24px',
         marginBottom: '35px'
       }}>
         <h2 style={{ 
@@ -140,11 +138,10 @@ export default function Screenshots() {
 
       {/* Balanced Sleek Modern Divider */}
       <div style={{
-        width: 'calc(100% - 40px)',
+        width: '100%',
         height: '2px',
         background: 'linear-gradient(90deg, transparent, var(--line), var(--orange), var(--line), transparent)',
         marginTop: '30px',
-        marginInline: 'auto',
         position: 'relative'
       }}>
         <div style={{

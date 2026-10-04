@@ -12,20 +12,17 @@ export default function BlogsPage() {
     {
       slug: 'xon-app-not-working',
       title: 'Xon App Not Working: How to Fix Problems on Android?',
-      description: 'Learn how to fix crashes, loading errors, installation problems, and other common issues with practical steps.',
-      category: 'Troubleshooting'
+      description: 'Learn how to fix crashes, loading errors, installation problems, and other common issues with practical steps.'
     },
     {
       slug: 'xon-app-not-installing',
       title: 'Xon App Not Installing? Fix Installation Errors and APK Problems',
-      description: 'Learn how to fix APK installation errors, compatibility issues, storage problems, blocked installs, and security warnings.',
-      category: 'Installation'
+      description: 'Learn how to fix APK installation errors, compatibility issues, storage problems, blocked installs, and security warnings.'
     },
     {
       slug: 'xon-apk-videos-not-playing',
       title: 'Xon APK Videos Not Playing? Fix Buffering and Playback Problems',
-      description: 'Learn how to fix buffering, loading, black screen, and playback problems on Android with simple troubleshooting steps.',
-      category: 'Playback'
+      description: 'Learn how to fix buffering, loading, black screen, and playback problems on Android with simple troubleshooting steps.'
     }
   ];
 
@@ -103,18 +100,7 @@ export default function BlogsPage() {
 
               {/* Content on Right */}
               <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '10px', flex: 1 }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span style={{ 
-                    background: 'var(--bg)', 
-                    border: '1px solid var(--line)', 
-                    padding: '4px 12px', 
-                    borderRadius: '100px', 
-                    font: '700 0.75rem var(--h)', 
-                    color: 'var(--orange)',
-                    textTransform: 'uppercase' 
-                  }}>
-                    {blog.category}
-                  </span>
+                <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
                   <span style={{ font: '700 0.9rem var(--h)', color: 'var(--orange)' }}>
                     Read Guide <span className="blog-arrow">→</span>
                   </span>

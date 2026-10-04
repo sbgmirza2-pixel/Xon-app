@@ -6,7 +6,7 @@ const blogData = {
   'xon-app-not-working': {
     title: 'Xon App Not Working: How to Fix Problems on Android?',
     meta: 'Xon app not working on Android? Learn how to fix crashes, loading errors, installation problems, and other common issues with practical steps.',
-    category: 'Troubleshooting',
+   
     intro: 'The Xon app cannont work on Android for many reasons, such as temporary software glitches, outdated app files, network problems, and device compatibility issues. The main issue depends on the app version and the error you are experiencing. Different apps are using similar names. Some solutions are below that focus on general Android troubleshooting. These steps did not fix problem for every version of Xon, but they can help you to identify and solve common issues.',
     tableHeaders: ['Problem', 'Major Cause', 'Solution'],
     tableRows: [
@@ -50,7 +50,7 @@ const blogData = {
   'xon-app-not-installing': {
     title: 'Xon App Not Installing? Fix Installation Errors and APK Problems',
     meta: 'Xon app not installing on Android? Learn how to fix APK installation errors and APK problems, compatibility issues, storage problems, blocked installs, and security warnings.',
-    category: 'Installation',
+    
     intro: 'Xon app are not installing on Android for many reasons such as insufficient storage, incompatible Android versions, corrupted APK files, or wrong installation settings. These problems can cause an error on Android during the process. The exact issue depends on your device, APK version, and the error message. In this guide, you will find common issues that occur during Xon APK installation and some helpful tips on troubleshooting your Android deviceIt also provides information about APK version, device compatibility, permissions required for installation, existing app conflicts and Security warnings before reinstall.',
     tableHeaders: ['Problem', 'Reason', 'Solution'],
     tableRows: [
@@ -99,7 +99,7 @@ const blogData = {
   'xon-apk-videos-not-playing': {
     title: 'Xon APK Videos Not Playing? Fix Buffering and Playback Problems',
     meta: 'Xon APK videos not playing? Learn how to fix buffering, loading, black screen, and playback problems on Android with simple troubleshooting steps.',
-    category: 'Playback',
+    
     intro: 'One of the most common problems with Xon is videos not playing. Sometimes, the videos can buffer, freeze at the loading screen or display a black screen. These Xon APK playback issues may occur due to a poor internet connection, temporary app problems, or out-of-date version. This guide will teach you what may cause the Xon APK streaming problems when you are on Android and how to fix it easily.',
     tableHeaders: ['Problem', 'Solution'],
     tableRows: [
