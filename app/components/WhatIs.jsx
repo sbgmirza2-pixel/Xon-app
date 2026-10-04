@@ -6,21 +6,26 @@ export default function WhatIs() {
       margin: '0 auto',
       position: 'relative'
     }}>
+      {/* Section Heading aligned with App Information */}
       <div style={{
+        paddingLeft: '20px',
+        paddingRight: '24px',
         borderLeft: '4px solid var(--orange)',
-        paddingLeft: '24px',
+        marginLeft: '20px',
+        marginBottom: '25px'
       }}>
-        {/* Heading */}
         <h2 style={{ 
-          font: '800 2.2rem var(--h)', 
+          font: '800 2rem var(--h)', 
           color: 'var(--ink)',
-          marginBottom: '20px',
-          letterSpacing: '-0.02em'
+          letterSpacing: '-0.02em',
+          margin: 0
         }}>
           What is Xon App?
         </h2>
+      </div>
 
-        {/* Content Paragraphs */}
+      {/* Content Container aligned with App Information grid container */}
+      <div style={{ padding: '0 24px' }}>
         <p style={{ 
           fontSize: '1.1rem', 
           lineHeight: '1.8', 
