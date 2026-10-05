@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '../../components/Navbar';
 
+const SITE_URL = 'https://xonapp.net';
+
 const blogData = {
   'xon-app-not-working': {
     title: 'Xon App Not Working: How to Fix Problems on Android?',
@@ -297,6 +299,26 @@ export async function generateStaticParams() {
   return Object.keys(blogData).map((slug) => ({
     slug: slug,
   }));
+}
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const blog = blogData[slug];
+
+  if (!blog) {
+    return {
+      title: 'Blog Post Not Found - Xon App',
+      description: 'The guide you are looking for does not exist.',
+    };
+  }
+
+  return {
+    title: blog.title,
+    description: blog.meta,
+    alternates: {
+      canonical: `${SITE_URL}/blogs/${slug}`,
+    },
+  };
 }
 
 export default async function BlogDetail({ params }) {
