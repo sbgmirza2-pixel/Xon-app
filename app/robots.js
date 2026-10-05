@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = 'https://xonapp.net/';
+  const baseUrl = 'https://xonapp.net'; // Yahan se trailing slash hata diya hai
 
   return {
     rules: [
