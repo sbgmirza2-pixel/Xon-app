@@ -18,13 +18,13 @@ const SITE_URL = 'https://xonapp.net/';
 
 export const metadata = {
   title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
-  description: 'Watch 10,000+ cartoons and anime with XON App, available in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto, Chhota Bheem, and more for free on Android & iOS.',
+  description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
   alternates: {
     canonical: SITE_URL,
   },
   openGraph: {
     title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
-    description: 'Watch 10,000+ cartoons and anime with XON App, available in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto, Chhota Bheem, and more for free on Android & iOS.',
+    description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
     url: SITE_URL,
     siteName: 'XON App',
     images: [
