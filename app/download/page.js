@@ -1,6 +1,11 @@
+const SITE_URL = 'https://xonapp.net';
+
 export const metadata = {
-  title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
-  description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
+  title: 'Download Xon App APK (Latest v26) for Android - Free',
+  description: 'Download the latest version of Xon App APK safely for Android. Follow simple installation steps and enjoy unlimited streaming.',
+  alternates: {
+    canonical: `${SITE_URL}/download`,
+  },
 };
 
 import DownloadContent from './DownloadContent';
