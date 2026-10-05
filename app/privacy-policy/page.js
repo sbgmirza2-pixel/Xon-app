@@ -1,7 +1,14 @@
-'use client';
-
 import Navbar from '../components/Navbar';
 
+const SITE_URL = 'https://xonapp.net';
+
+export const metadata = {
+  title: 'Privacy Policy - Xon App Data & Information Security',
+  description: 'Read our Privacy Policy to learn what information may be collected when you visit the website and how it may be used.',
+  alternates: {
+    canonical: `${SITE_URL}/privacy-policy`,
+  },
+};
 
 export default function PrivacyPolicy() {
   return (
@@ -98,8 +105,6 @@ export default function PrivacyPolicy() {
           </div>
         </div>
       </section>
-
-      
     </main>
   );
 }

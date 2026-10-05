@@ -2,9 +2,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
 
+const SITE_URL = 'https://xonapp.net';
+
 export const metadata = {
   title: 'Xon App Blogs & Troubleshooting Guides',
   description: 'Explore our complete guides to fix Xon app installation errors, video playback issues, and general Android problems.',
+  alternates: {
+    canonical: `${SITE_URL}/blogs`,
+  },
 };
 
 export default function BlogsPage() {
