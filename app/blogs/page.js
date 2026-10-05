@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 const SITE_URL = 'https://xonapp.net';
 
 export const metadata = {
-  title: 'Xon App Blogs & Troubleshooting Guides',
+  title: 'Xon App Blogs and Troubleshooting Guides',
   description: 'Explore our complete guides to fix Xon app installation errors, video playback issues, and general Android problems.',
   alternates: {
     canonical: `${SITE_URL}/blogs`,
