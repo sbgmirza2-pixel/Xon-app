@@ -47,7 +47,7 @@ export default function Hero() {
               {/* Row 2: Clean Soft Rating & Share Button */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
                 
-                {/* Soft Rating Badge */}
+                {/* Soft Rating Badge (Fixed Low-Contrast Opacity) */}
                 <div style={{ 
                   display: 'flex', 
                   alignItems: 'center', 
@@ -61,7 +61,7 @@ export default function Hero() {
                     <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                   </div>
                   <span style={{ fontSize: '13px', fontFamily: 'var(--h)', fontWeight: '700', color: 'var(--ink)' }}>
-                    4.9 <span style={{ fontWeight: '400', opacity: 0.6 }}>(12k+ reviews)</span>
+                    4.9 <span style={{ fontWeight: '500', opacity: 0.85 }}>(12k+ reviews)</span>
                   </span>
                 </div>
 
@@ -105,11 +105,13 @@ export default function Hero() {
           <div className="icon">
             <Image 
               src="/xon-app.jpg" 
-              alt="Xon App" 
+              alt="Xon App logo" 
               width={300} 
               height={300} 
-              style={{ borderRadius: '26%', display: 'block' }}
+              style={{ borderRadius: '26%', display: 'block', width: '300px', height: '300px' }}
               priority
+              fetchPriority="high"
+              sizes="(max-width: 768px) 280px, 300px"
             />
           </div>
         </div>

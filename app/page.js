@@ -17,13 +17,13 @@ import AppInfo from './components/AppInfo';
 const SITE_URL = 'https://xonapp.net/';
 
 export const metadata = {
-  title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
+  title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
   description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
   alternates: {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
+    title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
     description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
     url: SITE_URL,
     siteName: 'XON App',
@@ -38,7 +38,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
+    title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
     description: ' Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
     images: [`${SITE_URL}/xon-app.jpg`],
   },
@@ -73,7 +73,7 @@ export default function HomePage() {
         ]
       },
       {
-        '@type': 'SoftwareApplication',
+        '@type': 'Website',
         name: 'Xon App',
         operatingSystem: 'ANDROID',
         applicationCategory: 'MultimediaApplication',

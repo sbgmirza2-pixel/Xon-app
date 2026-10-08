@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function Screenshots() {
   const screenshots = [
     { img: "/Xon_Home_Screen.webp", alt: "Home Screen" },
@@ -126,9 +128,13 @@ export default function Screenshots() {
         {screenshots.map((item, index) => (
           <div key={index} className="screenshot-card">
             <div className="img-container">
-              <img 
+              <Image 
                 src={item.img} 
                 alt={item.alt} 
+                width={290}
+                height={580}
+                quality={75}
+                sizes="(max-width: 768px) 260px, 290px"
                 className="screenshot-img" 
               />
             </div>

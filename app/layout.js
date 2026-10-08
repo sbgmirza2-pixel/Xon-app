@@ -3,6 +3,7 @@ import Script from 'next/script';
 import Footer from './components/Footer';
 import './globals.css';
 
+
 const baloo2 = Baloo_2({
   subsets: ['latin'],
   variable: '--font-baloo',
@@ -18,7 +19,7 @@ const nunito = Nunito({
 const SITE_URL = 'https://xonapp.net/';
 
 export const metadata = {
-  title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
+  title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
   description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
   authors: [{ name: 'XON App Team', url: `${SITE_URL}/about-us` }],
   creator: 'XON App',
@@ -27,7 +28,7 @@ export const metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
+    title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
     description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
     url: SITE_URL,
     siteName: 'XON App',
@@ -44,7 +45,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'XON App Download – Cartoons & Anime in Hindi, Tamil & Telugu',
+    title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
     description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
     images: [`${SITE_URL}/xon-app.jpg`],
   },
@@ -87,7 +88,7 @@ export default function RootLayout({ children }) {
         url: `${SITE_URL}/about`
       },
       {
-        '@type': 'SoftwareApplication',
+        '@type': 'website',
         '@id': `${SITE_URL}/#software`,
         name: 'Xon App',
         operatingSystem: 'ANDROID',
@@ -110,12 +111,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${baloo2.variable} ${nunito.variable}`}>
       <head>
-        {/* Google Analytics Tag - Original ID: G-DEZDNL1KK3 */}
+        {/* Optimized Google Analytics Tag */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-DEZDNL1KK3"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -124,7 +125,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* Global Schema Script injected here */}
+        {/* Global Schema Script */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

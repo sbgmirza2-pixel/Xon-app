@@ -184,7 +184,7 @@ export default function DownloadPage() {
                     <polyline points="7 10 12 15 17 10"></polyline>
                     <line x1="12" y1="15" x2="12" y2="3"></line>
                   </svg>
-                  Download Xon App APK (v26)
+                  Download Xon App APK (12.5.1)
                 </a>
                 <span style={{ fontSize: '0.82rem', color: 'var(--muted)', fontFamily: 'var(--b)' }}>
                   File size: ~15 MB &bull; Android 5.0+ &bull; Verified Safe
