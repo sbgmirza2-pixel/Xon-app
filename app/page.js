@@ -1,3 +1,11 @@
+const SITE_URL = 'https://xonapp.net/';
+
+export const metadata = {
+  title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
+  description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
+  alternates: {
+    canonical: SITE_URL,
+  }};
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import PopularTitles from './components/PopularTitles';
@@ -13,83 +21,32 @@ import FAQsSection from './components/FAQsSection';
 import Screenshots from './components/Screenshots';
 import AppInfo from './components/AppInfo';
 
-// ⚠️ DEMO CHECK: Apni original domain yahan update kar lein
-const SITE_URL = 'https://xonapp.net/';
 
-export const metadata = {
-  title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
-  description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
-  alternates: {
-    canonical: SITE_URL,
-  },
-  openGraph: {
-    title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
-    description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
-    url: SITE_URL,
-    siteName: 'XON App',
-    images: [
-      {
-        url: `${SITE_URL}/xon-app.jpg`, 
-        alt: 'XON App',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
-    description: ' Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
-    images: [`${SITE_URL}/xon-app.jpg`],
-  },
-};
+
 
 export default function HomePage() {
   // Comprehensive SEO Structured Data (JSON-LD Schema)
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'WebSite',
-        '@id': `${SITE_URL}/#website`,
-        url: SITE_URL,
-        name: 'Xon App',
-        description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
-        publisher: {
-          '@id': `${SITE_URL}/#organization`
-        }
-      },
-      {
-        '@type': 'Organization',
-        '@id': `${SITE_URL}/#organization`,
-        name: 'Xon App Editorial Team',
-        url: SITE_URL,
-        logo: {
-          '@type': 'ImageObject',
-          url: `${SITE_URL}/xon-app.jpg`
-        },
-        sameAs: [
-          'https://en.wikipedia.org/wiki/Streaming_media' // ⚠️ DEMO CHECK: Change or remove if not needed
-        ]
-      },
-      {
-        '@type': 'Website',
-        name: 'Xon App',
-        operatingSystem: 'ANDROID',
-        applicationCategory: 'MultimediaApplication',
-        offers: {
-          '@type': 'Offer',
-          price: '0',
-          priceCurrency: 'USD'
-        },
-        author: {
-          '@type': 'Organization',
-          name: 'Xon App Editorial Team'
-        },
-        datePublished: '2026-04-01T08:00:00+00:00',
-        dateModified: '2026-10-02T08:00:00+00:00'
+    '@type': 'Website', 
+    'name': 'xonapp',
+    'operatingSystem': 'ALL',
+    'applicationCategory': 'UtilitiesApplication',
+    'url': 'https://xonapp.net/',
+    'description': 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
+    'offers': {
+      '@type': 'Offer',
+      'price': '0',
+      'priceCurrency': 'USD'
+    },
+    'publisher': {
+      '@type': 'Organization',
+      'name': '',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': 'https://xonapp.net/xon-app.jpg'
       }
-    ]
+    }
   };
 
   return (

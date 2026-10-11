@@ -21,12 +21,8 @@ const SITE_URL = 'https://xonapp.net/';
 export const metadata = {
   title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
   description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
-  authors: [{ name: 'XON App Team', url: `${SITE_URL}/about-us` }],
-  creator: 'XON App',
-  publisher: 'XON App',
-  alternates: {
-    canonical: SITE_URL,
-  },
+ 
+   metadataBase: new URL("https://room801apk.com"),
   openGraph: {
     title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
     description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
@@ -49,87 +45,34 @@ export const metadata = {
     description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
     images: [`${SITE_URL}/xon-app.jpg`],
   },
+   alternates: {
+    canonical: SITE_URL,
+  },
 };
 
 export default function RootLayout({ children }) {
-  const currentDate = new Date().toISOString();
-
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'WebSite',
-        '@id': `${SITE_URL}/#website`,
-        url: SITE_URL,
-        name: 'Xon App',
-        description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
-        publisher: {
-          '@id': `${SITE_URL}/#organization`
-        }
-      },
-      {
-        '@type': 'Organization',
-        '@id': `${SITE_URL}/#organization`,
-        name: 'Xon App',
-        url: SITE_URL,
-        logo: {
-          '@type': 'ImageObject',
-          url: `${SITE_URL}/logo.webp`
-        },
-        sameAs: [
-          'https://en.wikipedia.org/wiki/Streaming_media',
-          'https://en.wikipedia.org/wiki/Mobile_app'
-        ]
-      },
-      {
-        '@type': 'Person',
-        '@id': `${SITE_URL}/#author`,
-        name: 'Xon App Team',
-        url: `${SITE_URL}/about`
-      },
-      {
-        '@type': 'website',
-        '@id': `${SITE_URL}/#software`,
-        name: 'Xon App',
-        operatingSystem: 'ANDROID',
-        applicationCategory: 'MultimediaApplication',
-        softwareVersion: '12.5.1',
-        datePublished: '2026-04-01T00:00:00Z',
-        dateModified: currentDate,
-        author: {
-          '@id': `${SITE_URL}/#author`
-        },
-        offers: {
-          '@type': 'Offer',
-          price: '0',
-          priceCurrency: 'USD'
-        }
-      }
-    ]
-  };
-
+  
   return (
     <html lang="en" className={`${baloo2.variable} ${nunito.variable}`}>
       <head>
         {/* Optimized Google Analytics Tag */}
         <Script
+        strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-DEZDNL1KK3"
-          strategy="lazyOnload"
+          
         />
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-DEZDNL1KK3');
-          `}
+        <Script id="google-analytics" 
+        strategy="afterInteractive">
+            dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-DEZDNL1KK3');
+            `,
+          }}
         </Script>
 
-        {/* Global Schema Script */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </head>
       <body>
         {children}
