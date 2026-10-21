@@ -1,4 +1,4 @@
-const SITE_URL = 'https://xonapp.net/';
+const SITE_URL = 'https://xonapp.net';
 
 export const metadata = {
   title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',

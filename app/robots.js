@@ -3,7 +3,7 @@ export default function robots() {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/private/', '/admin/'],
+      
     },
     sitemap: 'https://xonapp.net/sitemap.xml',
   };

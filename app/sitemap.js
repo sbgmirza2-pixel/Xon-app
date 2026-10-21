@@ -1,5 +1,5 @@
 export default async function sitemap() {
-  const baseUrl = 'https://xonapp.net/';
+  const baseUrl = 'https://xonapp.net';
 
   // Static & Footer Pages
   const staticRoutes = [

@@ -16,13 +16,13 @@ const nunito = Nunito({
   weight: ['400', '600', '700'],
 });
 
-const SITE_URL = 'https://xonapp.net/';
+const SITE_URL = 'https://xonapp.net';
 
 export const metadata = {
   title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
   description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
  
-   metadataBase: new URL("https://room801apk.com"),
+   metadataBase: new URL("https://xonapp.net"),
   openGraph: {
     title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
     description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
