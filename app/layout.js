@@ -16,21 +16,19 @@ const nunito = Nunito({
   weight: ['400', '600', '700'],
 });
 
-const SITE_URL = 'https://xonapp.net';
-
 export const metadata = {
   title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
   description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
- 
-   metadataBase: new URL("https://xonapp.net"),
+ metadataBase: new URL("https://xonapp.net"),
+   
   openGraph: {
     title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
     description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
-    url: SITE_URL,
+    url: 'https://xonapp.net',
     siteName: 'XON App',
     images: [
       {
-        url: `${SITE_URL}/xon-app.jpg`, 
+        url: 'https://xonapp.net/xon-app.jpg', 
         width: 1200,
         height: 630,
         alt: 'Xon App Download',
@@ -43,15 +41,14 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
     description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
-    images: [`${SITE_URL}/xon-app.jpg`],
+    images: ['https://xonapp.net/xon-app.jpg'],
   },
    alternates: {
-    canonical: SITE_URL,
+    canonical: 'https://xonapp.net',
   },
 };
 
 export default function RootLayout({ children }) {
-  
   return (
     <html lang="en" className={`${baloo2.variable} ${nunito.variable}`}>
       <head>

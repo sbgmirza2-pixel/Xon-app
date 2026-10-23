@@ -1,38 +1,24 @@
-export default async function sitemap() {
+export default function sitemap() {
   const baseUrl = 'https://xonapp.net';
 
-  // Static & Footer Pages
-  const staticRoutes = [
-    '',
-    '/download',
-    '/about-us',
-    '/contact-us',
-    '/disclaimer',
-    '/privacy-policy',
-    '/terms-and-conditions',
-    '/dmca',
-    '/blogs',
-    '/faqs',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: route === '' ? 'daily' : 'weekly',
-    priority: route === '' ? 1.0 : route === '/download' ? 0.9 : 0.8,
-  }));
-
-  // Active Blog Slugs
-  const blogSlugs = [
-    'xon-apk-videos-not-playing',
-    'xon-app-not-installing',
-    'xon-app-not-working'
+  return [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/blogs`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/download`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
-
-  const blogRoutes = blogSlugs.map((slug) => ({
-    url: `${baseUrl}/blogs/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  }));
-
-  return [...staticRoutes, ...blogRoutes];
 }

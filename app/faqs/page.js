@@ -1,3 +1,4 @@
+import AllFAQsContent from './AllFAQsContent';
 const SITE_URL = 'https://xonapp.net';
 
 export const metadata = {
@@ -8,7 +9,7 @@ export const metadata = {
   },
 };
 
-import AllFAQsContent from './AllFAQsContent';
+
 
 export default function Page() {
   return <AllFAQsContent />;

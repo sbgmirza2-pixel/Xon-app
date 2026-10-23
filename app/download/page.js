@@ -1,3 +1,4 @@
+import DownloadContent from './DownloadContent';
 const SITE_URL = 'https://xonapp.net';
 
 export const metadata = {
@@ -8,7 +9,7 @@ export const metadata = {
   },
 };
 
-import DownloadContent from './DownloadContent';
+
 
 export default function Page() {
   return <DownloadContent />;

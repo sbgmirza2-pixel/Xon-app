@@ -1,11 +1,11 @@
 const SITE_URL = 'https://xonapp.net';
-
 export const metadata = {
   title: 'XON App 12.5.1 APK – Mod & VIP Unlocked Download for Android',
   description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
-  alternates: {
+   alternates: {
     canonical: SITE_URL,
-  }};
+  },
+};
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import PopularTitles from './components/PopularTitles';
@@ -24,29 +24,56 @@ import AppInfo from './components/AppInfo';
 
 
 
+
 export default function HomePage() {
   // Comprehensive SEO Structured Data (JSON-LD Schema)
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Website', 
-    'name': 'xonapp',
-    'operatingSystem': 'ALL',
-    'applicationCategory': 'UtilitiesApplication',
-    'url': 'https://xonapp.net/',
-    'description': 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
-    'offers': {
-      '@type': 'Offer',
-      'price': '0',
-      'priceCurrency': 'USD'
-    },
-    'publisher': {
-      '@type': 'Organization',
-      'name': '',
-      'logo': {
-        '@type': 'ImageObject',
-        'url': 'https://xonapp.net/xon-app.jpg'
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': 'https://xonapp.net/#website',
+        url: SITE_URL,
+        name: 'Xon App',
+        description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
+        publisher: {
+          '@id': 'https://xonapp.net/#organization'
+        }
+      },
+      {
+        '@type': 'Organization',
+        '@id': 'https://xonapp.net/#organization',
+        name: 'Xon Editorial Team',
+        url: SITE_URL,
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://xonapp.net/xon-app.jpg' ,
+          width: 1200,
+          height: 630
+        },
+        sameAs: [
+          'https://store.steampowered.com',
+          'https://en.wikipedia.org/wiki/Video_game'
+        ]
+      },
+      {
+        '@type': 'SoftwareApplication',
+        name: 'Xon App',
+        operatingSystem: 'ANDROID',
+        applicationCategory: 'GameApplication',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD'
+        },
+        author: {
+          '@type': 'Organization',
+          name: 'Xon Editorial Team'
+        },
+        datePublished: '2026-05-01T08:00:00+00:00',
+        dateModified: '2026-09-28T08:00:00+00:00'
       }
-    }
+    ]
   };
 
   return (
