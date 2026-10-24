@@ -8,6 +8,15 @@ export const metadata = {
   alternates: {
     canonical: `${SITE_URL}/terms-and-conditions`,
   },
+  openGraph: {
+  title: 'Terms & Conditions - Xon App Website Rules & Guidelines',
+  description: 'Read our Terms and Conditions for the basic rules that apply when you use this website and its content.',
+  url: '/terms-and-conditions',
+  siteName: 'Xon App Fan Site',
+  type: 'website',
+  locale: 'en_US',
+  images: [{ url: '/xon-app.jpg', width: 1200, height: 630, alt: 'Xon App icon' }],
+},
 };
 
 export default function TermsAndConditions() {
@@ -44,7 +53,7 @@ export default function TermsAndConditions() {
             margin: '8px 0 0 0', 
             fontFamily: 'var(--b)' 
           }}>
-            Read our Terms and Conditions for the basic rules that apply when you use this website and its content[cite: 2].
+            Read our Terms and Conditions for the basic rules that apply when you use this website and its content.
           </p>
         </div>
 
@@ -64,7 +73,7 @@ export default function TermsAndConditions() {
               Agreement to Terms
             </h2>
             <p style={{ font: '1rem var(--b)', color: 'var(--muted)', lineHeight: '1.7', margin: 0 }}>
-              By using this website, you agree to these Terms and Conditions[cite: 2].
+              By using this website, you agree to these Terms and Conditions.
             </p>
           </div>
 
@@ -75,7 +84,7 @@ export default function TermsAndConditions() {
               General Information & Updates
             </h3>
             <p style={{ font: '1rem var(--b)', color: 'var(--muted)', lineHeight: '1.7', margin: 0 }}>
-              The content published here is provided for general information. We may update, change, or remove any page or information when needed[cite: 2].
+              The content published here is provided for general information. We may update, change, or remove any page or information when needed.
             </p>
           </div>
 
@@ -86,7 +95,7 @@ export default function TermsAndConditions() {
               Acceptable Use & Restrictions
             </h3>
             <p style={{ font: '1rem var(--b)', color: 'var(--muted)', lineHeight: '1.7', margin: 0 }}>
-              You must not use the website for unlawful purposes or try to damage, disrupt, or misuse any part of it. The content should also not be copied or used in a way that violates applicable laws or the rights of others[cite: 2].
+              You must not use the website for unlawful purposes or try to damage, disrupt, or misuse any part of it. The content should also not be copied or used in a way that violates applicable laws or the rights of others.
             </p>
           </div>
 
@@ -97,10 +106,10 @@ export default function TermsAndConditions() {
               Third-Party Content & Changes
             </h3>
             <p style={{ font: '1rem var(--b)', color: 'var(--muted)', lineHeight: '1.7', margin: '0 0 12px 0' }}>
-              Some pages may mention third-party apps, services, names, or trademarks. Those belong to their respective owners[cite: 2].
+              Some pages may mention third-party apps, services, names, or trademarks. Those belong to their respective owners.
             </p>
             <p style={{ font: '1rem var(--b)', color: 'var(--muted)', lineHeight: '1.7', margin: 0 }}>
-              We may update these terms from time to time. Any changes will be posted on this page[cite: 2].
+              We may update these terms from time to time. Any changes will be posted on this page.
             </p>
           </div>
         </div>

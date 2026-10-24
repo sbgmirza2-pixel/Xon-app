@@ -312,13 +312,18 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  return {
+ return {
+  title: { absolute: blog.title },
+  description: blog.meta,
+  alternates: { canonical: `/blogs/${slug}` },
+  openGraph: {
     title: blog.title,
     description: blog.meta,
-    alternates: {
-      canonical: `${SITE_URL}/blogs/${slug}`,
-    },
-  };
+    url: `/blogs/${slug}`,
+    type: 'article',
+    images: [{ url: '/xon-app.jpg', width: 1200, height: 630, alt: blog.title }],
+  },
+};
 }
 
 export default async function BlogDetail({ params }) {
@@ -354,9 +359,9 @@ export default async function BlogDetail({ params }) {
 
         {/* Blog Header */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-          <div style={{ font: '800 2.4rem var(--h)', color: 'var(--ink)', lineHeight: '1.2', margin: 0, letterSpacing: '-0.02em' }}>
+          <h2 style={{ font: '800 2.4rem var(--h)', color: 'var(--ink)', lineHeight: '1.2', margin: 0, letterSpacing: '-0.02em' }}>
             {blog.title}
-          </div>
+          </h2>
 
           <p style={{ font: '1.1rem var(--b)', color: 'var(--muted)', lineHeight: '1.7', margin: 0 }}>
             {blog.intro}

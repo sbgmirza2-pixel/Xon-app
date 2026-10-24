@@ -1,3 +1,4 @@
+export const dynamicParams = false;
 import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
@@ -9,6 +10,15 @@ export const metadata = {
   description: 'Explore our complete guides to fix Xon app installation errors, video playback issues, and general Android problems.',
   alternates: {
     canonical: `${SITE_URL}/blogs`,
+    openGraph: {
+  title: 'Xon App Blogs and Troubleshooting Guides',
+  description: 'Explore our complete guides to fix Xon app installation errors, video playback issues, and general Android problems.',
+  url: '/blogs',
+  siteName: 'Xon App Fan Site',
+  type: 'website',
+  locale: 'en_US',
+  images: [{ url: '/xon-app.jpg', width: 1200, height: 630, alt: 'Xon App icon' }],
+},
   },
 };
 

@@ -23,7 +23,7 @@ export default function Footer() {
             Your ultimate entertainment destination for cartoons and anime.
           </p>
           <div style={{ color: 'var(--muted)', fontSize: '0.9rem', marginTop: '4px' }}>
-            &copy; 2026 Xonapp Dev. All rights reserved.
+           © 2026 Xon App Fan Site. All rights reserved.
           </div>
         </div>
 

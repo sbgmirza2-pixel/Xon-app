@@ -4,9 +4,9 @@ export default function AppInfo() {
   const appDetails = [
     { label: "App Name", value: "Xon App" },
     { label: "Category", value: "Entertainment" },
-    { label: "Developer", value: "Xonapp Dev" },
+    
     { label: "Version", value: "12.5.1" },
-    { label: "Updated On", value: "May 5, 2026" },
+    { label: "Updated On", value: "Oct 24, 2026" },
     { label: "Compatible with", value: "Android 5.0+" }
   ];
 

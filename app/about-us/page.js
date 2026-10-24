@@ -10,6 +10,15 @@ export const metadata = {
   description: 'Learn more about Xon App, our mission, Android guides, feature updates, and reliable information resources provided for users.',
   alternates: {
     canonical: `${SITE_URL}/about-us`,
+    openGraph: {
+  title: 'About Us - Xon App Information & Android Guides',
+  description: 'Learn more about Xon App, our mission, Android guides, feature updates, and reliable information resources provided for users.',
+  url: '/about-us',
+  siteName: 'Xon App Fan Site',
+  type: 'website',
+  locale: 'en_US',
+  images: [{ url: '/xon-app.jpg', width: 1200, height: 630, alt: 'Xon App icon' }],
+},
   },
 };
 

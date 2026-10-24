@@ -145,7 +145,7 @@ ol.steps li::before {
 ul.pc { padding-left: 1.2em; margin: 0; }
 ul.pc li { margin-bottom: 6px; }
 .pros h3 { color: var(--green); }
-.cons h3 { code { color: var(--orange-ink); } }
+.cons h3 { color: var(--orange-ink); }
 
 /* Alternatives */
 .alt { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }

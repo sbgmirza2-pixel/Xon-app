@@ -47,23 +47,7 @@ export default function Hero() {
               {/* Row 2: Clean Soft Rating & Share Button */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
                 
-                {/* Soft Rating Badge (Fixed Low-Contrast Opacity) */}
-                <div style={{ 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  gap: '8px', 
-                  padding: '8px 14px',
-                  background: 'var(--surface)',
-                  borderRadius: '100px',
-                  border: '1px solid var(--line)'
-                }}>
-                  <div style={{ display: 'flex', color: '#f59e0b', fontSize: '14px', gap: '1px' }}>
-                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                  </div>
-                  <span style={{ fontSize: '13px', fontFamily: 'var(--h)', fontWeight: '700', color: 'var(--ink)' }}>
-                    4.9 <span style={{ fontWeight: '500', opacity: 0.85 }}>(12k+ reviews)</span>
-                  </span>
-                </div>
+              
 
                 {/* Share App Button with Hover Effect */}
                 <button 

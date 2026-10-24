@@ -2,10 +2,14 @@ import DownloadContent from './DownloadContent';
 const SITE_URL = 'https://xonapp.net';
 
 export const metadata = {
-  title: 'Download Xon App APK (Latest v26) for Android - Free',
-  description: 'Watch 10,000+ cartoons and anime on XON App in Hindi, English, Tamil & Telugu. Stream Doraemon, Naruto and Chhota Bheem for free on Android & iOS.',
-  alternates: {
-    canonical: `${SITE_URL}/download`,
+  title: 'Download Xon App APK 12.5.1 for Android',
+  description: 'Download Xon App APK v12.5.1 for Android. File details, requirements, install steps and safety tips before you install.',
+  alternates: { canonical: '/download' },
+  openGraph: {
+    title: 'Download Xon App APK 12.5.1 for Android',
+    description: 'Download Xon App APK v12.5.1 for Android. File details, requirements, install steps and safety tips.',
+    url: '/download',
+    images: [{ url: '/xon-app.jpg', width: 1200, height: 630 }],
   },
 };
 
