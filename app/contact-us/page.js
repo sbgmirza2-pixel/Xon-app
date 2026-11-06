@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 const SITE_URL = 'https://xonapp.net';
 
 export const metadata = {
-  title: 'Contact Us - Xon App Support & Feedback',
+  title: 'Contact Us',
   description: 'Get in touch with the us for questions, feedback, technical support, or content corrections. We are here to help.',
   alternates: {
     canonical: `${SITE_URL}/contact-us`,
@@ -12,7 +12,7 @@ export const metadata = {
   title: 'Contact Us - Xon App Support & Feedback',
   description: 'Get in touch with the us for questions, feedback, technical support, or content corrections. We are here to help.',
   url: '/',
-  siteName: 'Xon App Fan Site',
+  siteName: 'Xon App ',
   type: 'website',
   locale: 'en_US',
   images: [{ url: '/xon-app.jpg', width: 1200, height: 630, alt: 'Xon App icon' }],

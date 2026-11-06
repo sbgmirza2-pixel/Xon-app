@@ -4,14 +4,14 @@ import Navbar from '../components/Navbar';
 const SITE_URL = 'https://xonapp.net';
 
 export const metadata = {
-  title: 'Disclaimer - Xon App Information & Third-Party Policy',
+  title: 'Disclaimer',
   description: ' Read our Disclaimer for information about app details, third-party content, trademarks, and the information shared on this website.',
   alternates: {canonical: '/disclaimer'},
   openGraph: {
-  title: 'Disclaimer - Xon App Information & Third-Party Policy',
+  title: 'Disclaimer',
   description: 'Read our Disclaimer for information about app details, third-party content, trademarks, and the information shared on this website.',
   url: '/disclaimer',
-  siteName: 'Xon App Fan Site',
+  siteName: 'Xon App ',
   type: 'website',
   locale: 'en_US',
   images: [{ url: '/xon-app.jpg', width: 1200, height: 630, alt: 'Xon App icon' }],

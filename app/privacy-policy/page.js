@@ -3,16 +3,16 @@ import Navbar from '../components/Navbar';
 const SITE_URL = 'https://xonapp.net';
 
 export const metadata = {
-  title: 'Privacy Policy - Xon App Data & Information Security',
+  title: 'Privacy Policy',
   description: 'Read our Privacy Policy to learn what information may be collected when you visit the website and how it may be used.',
   alternates: {
     canonical: `${SITE_URL}/privacy-policy`,
   },
   openGraph: {
-  title: 'Privacy Policy - Xon App Data & Information Security',
+  title: 'Privacy Policy',
   description: 'Read our Privacy Policy to learn what information may be collected when you visit the website and how it may be used.',
   url: '/privacy-policy',
-  siteName: 'Xon App Fan Site',
+  siteName: 'Xon App ',
   type: 'website',
   locale: 'en_US',
   images: [{ url: '/xon-app.jpg', width: 1200, height: 630, alt: 'Xon App icon' }],

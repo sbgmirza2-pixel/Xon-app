@@ -1,7 +1,8 @@
 import { Baloo_2, Nunito } from 'next/font/google';
-import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import Footer from './components/Footer';
 import './globals.css';
+import { SITE_URL, DEFAULT_TITLE, DEFAULT_DESC } from './lib/site';
 
 const baloo2 = Baloo_2({
   subsets: ['latin'],
@@ -16,16 +17,18 @@ const nunito = Nunito({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://xonapp.net'),
-  
-  title: {
-    default: 'Xon App APK 12.5.1 Download for Android – Latest Version',
-    template: '%s | Xon App',
-  },
-  description:
-    'Download Xon App APK v12.5.1 for Android. Features, install steps, safety tips and fixes for common problems. Updated October 2026.',
+  metadataBase: new URL(SITE_URL),
+
+  // Har page ka apna title hai, isliye template nahi lagaya
+  title: DEFAULT_TITLE,
+  description: DEFAULT_DESC,
+  robots: { index: true, follow: true },
+
   openGraph: {
-    siteName: 'Xon App Fan Site',
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESC,
+    url: SITE_URL,
+    siteName: 'Xon App',
     images: [
       {
         url: '/xon-app.jpg',
@@ -39,29 +42,22 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESC,
     images: ['/xon-app.jpg'],
   },
 };
+
+// NOTE: JSON-LD (schema) yahan nahi hai, sirf page.js mein hai,
+// taake WebSite/SoftwareApplication do baar na aaye.
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${baloo2.variable} ${nunito.variable}`}>
       <body>
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-DEZDNL1KK3"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-DEZDNL1KK3');
-          `}
-        </Script>
-
         {children}
         <Footer />
+        <GoogleAnalytics gaId="G-DEZDNL1KK3" />
       </body>
     </html>
   );

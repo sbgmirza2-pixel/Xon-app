@@ -1,17 +1,13 @@
-const SITE_URL = 'https://xonapp.net';
-const SITE_NAME = 'Xon App Fan Site';       
-const UPDATED = '2026-10-24';                   
-
-export const metadata = {
-  title: { absolute: 'Xon App APK 12.5.1 Download for Android – Latest Version' },
-  description: 'Download Xon App APK v12.5.1 for Android. Features, install steps, safety tips and fixes for common problems. Updated October 2026.',
-  alternates: { canonical: '/' },
-  openGraph: {
-    title: 'Xon App APK 12.5.1 Download for Android – Latest Version',
-    description: 'Download Xon App APK v12.5.1 for Android. Features, install steps, safety tips and fixes for common problems. Updated October 2026.',
-    url: '/',
-  },
-};
+import {
+  SITE_URL,
+  SITE_NAME,
+  APP_VERSION,
+  UPDATED_ISO,
+  UPDATED_HUMAN,
+  DEFAULT_TITLE,
+  DEFAULT_DESC,
+  DISCLAIMER,
+} from './lib/site';
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -27,6 +23,17 @@ import Conclusion from './components/Conclusion';
 import FAQsSection from './components/FAQsSection';
 import Screenshots from './components/Screenshots';
 import AppInfo from './components/AppInfo';
+
+export const metadata = {
+  title: { absolute: DEFAULT_TITLE },
+  description: DEFAULT_DESC,
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESC,
+    url: '/',
+  },
+};
 
 export default function HomePage() {
   const jsonLd = {
@@ -44,7 +51,6 @@ export default function HomePage() {
         '@id': `${SITE_URL}/#organization`,
         name: SITE_NAME,
         url: SITE_URL,
-        
       },
       {
         '@type': 'SoftwareApplication',
@@ -54,10 +60,10 @@ export default function HomePage() {
           'Xon App APK for Android: features, install steps, safety tips and fixes for common problems.',
         operatingSystem: 'Android 5.0+',
         applicationCategory: 'MultimediaApplication',
-        softwareVersion: '12.5.1',
+        softwareVersion: APP_VERSION,
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
         publisher: { '@id': `${SITE_URL}/#organization` },
-        dateModified: UPDATED,
+        dateModified: UPDATED_ISO,
       },
     ],
   };
@@ -84,11 +90,11 @@ export default function HomePage() {
       <FAQsSection />
 
       <section className="w" style={{ padding: '20px 20px 40px 20px' }}>
-        <p style={{ fontStyle: 'italic', color: 'var(--muted)', fontSize: '0.95rem', margin: '0 0 8px 0', lineHeight: '1.6' }}>
-          This website is an independent fan site and is not officially affiliated with or endorsed by the app's developers.
+        <p style={{ fontSize: '0.85rem', color: 'var(--muted)', margin: '0 0 8px 0', lineHeight: '1.6' }}>
+          {DISCLAIMER}
         </p>
         <p style={{ fontSize: '0.85rem', color: 'var(--muted)', margin: 0 }}>
-          Published by {SITE_NAME} • Last updated: October 24, 2026
+          Published by {SITE_NAME} • Last updated: {UPDATED_HUMAN}
         </p>
       </section>
     </main>

@@ -4,16 +4,16 @@ import Navbar from '../components/Navbar';
 const SITE_URL = 'https://xonapp.net';
 
 export const metadata = {
-  title: 'DMCA Policy - Xon App Copyright & Removal Notice',
+  title: 'DMCA',
   description: 'If you believe your copyrighted work appears here without permission, learn how to send a copyright notice for review.',
   alternates: {
     canonical: `${SITE_URL}/dmca`,
   },
   openGraph: {
-    title: 'DMCA Policy - Xon App Copyright & Removal Notice',
+    title: 'DMCA',
     description: 'If you believe your copyrighted work appears here without permission, learn how to send a copyright notice for review.',
     url: '/dmca',
-    siteName: 'Xon App Fan Site',
+    siteName: 'Xon App ',
     type: 'website',
     locale: 'en_US',
     images: [{ url: '/xon-app.jpg', width: 1200, height: 630, alt: 'Xon App icon' }],

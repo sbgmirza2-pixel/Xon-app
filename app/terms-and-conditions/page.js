@@ -3,16 +3,16 @@ import Navbar from '../components/Navbar';
 const SITE_URL = 'https://xonapp.net';
 
 export const metadata = {
-  title: 'Terms & Conditions - Xon App Website Rules & Guidelines',
+  title: 'Terms & Conditions',
   description: ' Read our Terms and Conditions for the basic rules that apply when you use this website and its content.',
   alternates: {
     canonical: `${SITE_URL}/terms-and-conditions`,
   },
   openGraph: {
-  title: 'Terms & Conditions - Xon App Website Rules & Guidelines',
+  title: 'Terms & Conditions',
   description: 'Read our Terms and Conditions for the basic rules that apply when you use this website and its content.',
   url: '/terms-and-conditions',
-  siteName: 'Xon App Fan Site',
+  siteName: 'Xon App ',
   type: 'website',
   locale: 'en_US',
   images: [{ url: '/xon-app.jpg', width: 1200, height: 630, alt: 'Xon App icon' }],
